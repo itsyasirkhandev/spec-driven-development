@@ -1,0 +1,335 @@
+
+Design Plan: Chat History Sidebar
+
+Technical specification for implementing a scalable, real-time chat history sidebar with
+
+React, FastAPI, and PostgreSQL.
+
+
+
+1\. Objective
+
+
+
+Implement a chat history sidebar that allows users to:
+
+
+
+. View previous chats
+
+
+
+. Reopen any chat
+
+
+
+. Identify the currently active chat
+
+
+
+. Keep chats ordered by recent activity
+
+
+
+. Continue conversations seamlessly
+
+
+
+Frontend: React
+
+
+
+2\. Tech Stack
+
+
+
+Backend: FastAPI
+
+
+
+Database: PostgreSQL / SQLite
+
+
+
+ORM: SQLAlchemy (asyne]
+
+
+
+Why this stack?
+
+
+
+React is excellent for dynamic UI such as chat sidebars.
+
+
+
+FastAPI works well for API-based high-concurrency chat systems.
+
+
+
+Relational DBs are a natural fit because chats and messages have a clear 1-to-many
+
+relationship.
+
+
+
+3\. High-Level Architecture
+
+
+
+The feature is divided into three distinct layers of responsibility:
+
+
+
+00
+
+
+
+A. Frontend (React)
+
+. Render sidebar \& window
+
+. Track active chat
+
+. Show loading/error states
+
+
+
+B. Backend (FastAPI)
+
+. Return chat summaries
+
+. Return full conversations
+
+. Create/append messages
+
+
+
+C. Database
+
+
+
+. Store chats \& messages
+
+. Maintain relationships
+
+. Support ordered retrieval
+
+
+
+ARCHITECTURE FLOW
+
+
+
+Frontend \[React)
+
+
+
+Backend \[FastAPI)
+
+
+
+Database (PostgreSQL / SQLite)
+
+
+
+
+
+4\. Data Model
+
+
+
+We need two main entities: Chat (represents the conversation thread) and Message
+
+(represents individual messages). One chat has many messages.
+
+
+
+PYTHON (SQLALCHEMY]
+
+
+
+from sqlalcheny import Column, String, DateTime, ForeignKey, Text
+
+from sqlalcheny.orm import relationship
+
+from sqlalcheny.sql import func
+
+from database import Base
+
+
+
+ctass Chat(Base):
+
+tabtenane\_ = "chats"
+
+
+
+id = Column(String, primary\_key=True)
+
+title = Column(String, nullable=False]
+
+created\_at = Column(DateTime(timezone=True), server\_default=func.now\[))
+
+updated\_at = Column(DateTime(timezone=True), server\_default=func.now(), onupdate=func.now())
+
+
+
+messages = relationship("Message", back\_populates="chat", cascade="all, delete-orphan")
+
+
+
+class Message(Base):
+
+\_tablenane\_ = "nessages"
+
+
+
+id = Column(String, primary\_key=True)
+
+chat\_id = Column(String, ForeignKey("chats.id"), nullable=False)
+
+role = Column\[String, nullable=False)
+
+\# "user" or "assistant"
+
+content = Column(Text, nullable=False)
+
+created\_at = Column(DateTime(timezone=True), server\_default=func.now())
+
+
+
+chat - relationship("Chat", back\_populates="messages")
+
+
+
+5\. Core Design Decisions
+
+
+
+Decision 1: Store chats and messages separately
+
+Why: A chat contains metadata, while messages vary in number. Separation makes retrieval and
+
+ordering efficient.
+
+
+
+Decision 2: Use updated\_at to sort chats
+
+Why: The sidebar should surface most recently active chats first. Updating this timestamp on new
+
+messages naturally handles sorting.
+
+
+
+Decision 3: Fetch summaries for sidebar
+
+Why: Sidebar load times must be fast. Fetching thousands of message contents upfront.
+
+
+
+
+
+6\. Core Functional Flows
+
+
+
+A. Load Sidebar
+
+
+
+Triggered on app open. Requests summaries sorted by updated\_at DESC.
+
+
+
+JSON (RESPONSE)
+
+
+
+"id": "chat\_101",
+
+"title": "Explaim overfitting",
+
+"updated\_at": "2026-84-06T10:15:00"
+
+
+
+B. Open Chat
+
+
+
+Triggered by click. Requests full chat + messages ordered by created\_at ASC.
+
+
+
+PYTHON (QUERY)
+
+
+
+stmt = (
+
+select (Message)
+
+.where(Message,chat\_id == chat\_id)
+
+.order\_by(Message.created\_at.asc\[)>
+
+
+
+
+
+C. Title Generation
+
+
+
+Titles are generated from the first user message, truncated if necessary.
+
+
+
+PYTHON
+
+
+
+def generate\_chat\_title(first\_message: str, rax\_len: int = 58) -> str:
+
+title = first\_message.strip()
+
+if len(title) <= max\_len:
+
+return title
+
+return title\[:max\_len]. rstrip() + " ... "
+
+
+
+
+
+
+
+7\. Development Plan
+
+
+
+1
+
+Database \& Models
+
+Create models, establish relationships, and apply indexes to `updated\_at` and `chat\_id`.
+
+
+
+2
+
+Backend APIs
+
+Implement FastAPI routes for fetching summaries, single chats, and appending messages.
+
+
+
+3
+
+Frontend UI
+
+Build React Sidebar, ChatWindow, wiring clicks, and handling empty/loading states. 
+
