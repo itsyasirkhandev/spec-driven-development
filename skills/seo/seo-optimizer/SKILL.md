@@ -41,15 +41,16 @@ Perform comprehensive SEO analysis and optimization covering keyword placement, 
 ```javascript
 // Readability scoring example
 const readabilityMetrics = {
-  fleschScore: 65,           // Target: 60-70
-  gradeLevel: 8,             // Target: 7-9
-  avgSentenceLength: 18,     // Target: <20 words
-  passiveVoice: 5,           // Target: <10%
-  transitionWords: 30        // Target: >30%
-};
+  fleschScore: 65, // Target: 60-70
+  gradeLevel: 8, // Target: 7-9
+  avgSentenceLength: 18, // Target: <20 words
+  passiveVoice: 5, // Target: <10%
+  transitionWords: 30, // Target: >30%
+}
 ```
 
 **Key Metrics:**
+
 - Flesch Reading Ease score (60-70 ideal)
 - Grade level estimation
 - Average sentence length (<20 words)
@@ -58,14 +59,14 @@ const readabilityMetrics = {
 
 ### 4. Technical SEO Elements
 
-| Element | Recommendation |
-|---------|----------------|
-| Meta Title | 50-60 characters with primary keyword |
-| Meta Description | 150-160 characters, compelling with keyword |
-| URL Slug | Short, keyword-rich, hyphen-separated |
-| Image Alt Text | Descriptive with natural keyword usage |
-| Internal Links | Link to related content with keyword anchors |
-| External Links | Quality outbound links to authoritative sources |
+| Element          | Recommendation                                  |
+| ---------------- | ----------------------------------------------- |
+| Meta Title       | 50-60 characters with primary keyword           |
+| Meta Description | 150-160 characters, compelling with keyword     |
+| URL Slug         | Short, keyword-rich, hyphen-separated           |
+| Image Alt Text   | Descriptive with natural keyword usage          |
+| Internal Links   | Link to related content with keyword anchors    |
+| External Links   | Quality outbound links to authoritative sources |
 
 ### 5. Content Quality Assessment
 
@@ -83,18 +84,21 @@ Organize findings into prioritized action items based on impact and implementati
 ## Priority Levels
 
 ### Critical (Fix Immediately) 🚨
+
 - Missing or poor meta description
 - No keyword in title or H1
 - Broken internal links
 - Keyword density too high (stuffing) or too low
 
 ### High Priority ⚠️
+
 - Poor readability score
 - Weak heading structure
 - Missing alt text on images
 - Content too thin for topic
 
 ### Medium Priority 📋
+
 - Could add related keywords
 - Featured snippet opportunities
 - Additional internal linking
@@ -108,40 +112,48 @@ Organize findings into prioritized action items based on impact and implementati
 ## Overall Score: X/100
 
 ### Quick Wins 🚀
+
 1. [Specific action with exact change]
 2. [Specific action with exact change]
 
 ## Keyword Analysis
+
 - Primary keyword density
 - Placement verification
 - LSI keyword coverage
 
 ## Readability Metrics
+
 - Flesch Reading Ease: XX/100
 - Grade Level: X
 - Sentence length assessment
 
 ## Technical SEO
+
 - Meta tags analysis
 - URL optimization
 - Image optimization
 
 ## Content Gaps
+
 - Missing subtopics
 - Coverage recommendations
 - Topic expansion opportunities
 
 ## Competitor Insights
+
 - Top ranking pages analysis
 - Word count comparison
 - Unique angles they cover
 - Our competitive advantage
 
 ## Implementation Checklist
+
 - [ ] Action item 1
 - [ ] Action item 2
 
 ## Estimated Impact
+
 - **Time to Implement**: X hours
 - **Expected Improvement**: [Moderate/Significant] ranking boost
 - **Priority**: [High/Medium/Low]
@@ -182,12 +194,14 @@ Organize findings into prioritized action items based on impact and implementati
 ## Additional Resources
 
 See [references/analysis-framework.md](references/analysis-framework.md) for:
+
 - Detailed analysis instructions for each area
 - Technical specifications and formulas
 - Competitor analysis guidelines
 - E-A-T evaluation criteria
 
 See [references/output-templates.md](references/output-templates.md) for:
+
 - Complete SEO report template
 - Implementation checklist format
 - Example workflow with sample content

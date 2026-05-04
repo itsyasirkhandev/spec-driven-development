@@ -14,6 +14,7 @@
 ## Overall Score: X/100
 
 ### Score Breakdown
+
 - Keywords: XX/25
 - Readability: XX/25
 - Technical: XX/25
@@ -46,11 +47,13 @@
 ## Keyword Analysis
 
 ### Target Keywords
+
 - **Primary**: [keyword] (density: X.X%)
 - **Secondary**: [keyword 1], [keyword 2]
 - **LSI Keywords Found**: [variations]
 
 ### Placement Check
+
 ✅ Keyword in title
 ❌ Keyword missing in first 100 words ← **Add to opening paragraph**
 ✅ Keyword in 2/5 H2 headings
@@ -58,6 +61,7 @@
 ✅ Keyword in meta description
 
 ### Density Analysis
+
 - **Current Density**: X.X%
 - **Target Range**: 1-2%
 - **Status**: [Too low/Optimal/Too high]
@@ -66,6 +70,7 @@
 ### Suggested Keyword Placements
 
 **Add keyword naturally in these sections:**
+
 1. Opening paragraph (after sentence 2)
 2. Before "Benefits" H2 heading
 3. In conclusion paragraph
@@ -80,26 +85,29 @@ Improved: "Managing projects efficiently with **project management tools** requi
 
 ### Overall Assessment: [Good/Needs Improvement/Poor]
 
-| Metric | Current | Target | Status |
-|--------|---------|--------|--------|
-| Flesch Reading Ease | XX | 60-70 | [✅/⚠️/❌] |
-| Grade Level | X | 7-9 | [✅/⚠️/❌] |
-| Avg Sentence Length | XX words | <20 | [✅/⚠️/❌] |
-| Passive Voice | X% | <10% | [✅/⚠️/❌] |
-| Transition Words | X% | >30% | [✅/⚠️/❌] |
+| Metric              | Current  | Target | Status     |
+| ------------------- | -------- | ------ | ---------- |
+| Flesch Reading Ease | XX       | 60-70  | [✅/⚠️/❌] |
+| Grade Level         | X        | 7-9    | [✅/⚠️/❌] |
+| Avg Sentence Length | XX words | <20    | [✅/⚠️/❌] |
+| Passive Voice       | X%       | <10%   | [✅/⚠️/❌] |
+| Transition Words    | X%       | >30%   | [✅/⚠️/❌] |
 
 ### Detailed Findings
 
 **Flesch Reading Ease: XX/100** (Grade level: XX)
+
 - Interpretation: [Very Easy/Easy/Standard/Difficult]
 - Assessment: [Good for target audience / Needs simplification]
 
 **Sentence Length Issues:**
 Found X sentences over 30 words:
+
 1. "The comprehensive project management software..." (35 words) → Split into 2 sentences
 2. "When teams collaborate effectively..." (32 words) → Simplify or break up
 
 **Passive Voice Examples:**
+
 1. "The project was completed by the team" → "The team completed the project"
 2. "Tasks are assigned automatically" → "The system assigns tasks automatically"
 
@@ -116,11 +124,14 @@ Paragraph 5: Abrupt shift → Add "However," to show contrast
 **Current** (X chars): [current title or "Missing"]
 
 **Issues:**
+
 - [Too short/long, missing keyword, not compelling]
 
 **Suggested** (XX chars):
 ```
+
 [Optimized Title with Keyword - 50-60 characters]
+
 ```
 
 **Why this works:**
@@ -140,8 +151,10 @@ Paragraph 5: Abrupt shift → Add "However," to show contrast
 
 **Suggested** (XXX chars):
 ```
+
 [Compelling description that includes primary keyword and clear value proposition.
 Includes call-to-action. 150-160 characters ideal.]
+
 ```
 
 **Formula used:** Value prop + Keyword + Benefit + CTA
@@ -176,13 +189,15 @@ Includes call-to-action. 150-160 characters ideal.]
 
 **Current Structure:**
 ```
+
 H1: [Main title]
-  H2: [Section 1] ✅
-    H3: [Subsection] ✅
-  H2: [Section 2] ✅
-  H3: [Subsection] ⚠️ Should be under H2
-  H2: [Section 3] ✅
-```
+H2: [Section 1] ✅
+H3: [Subsection] ✅
+H2: [Section 2] ✅
+H3: [Subsection] ⚠️ Should be under H2
+H2: [Section 3] ✅
+
+````
 
 **Issues Found:**
 1. [H3 not nested under H2 - breaks hierarchy]
@@ -225,7 +240,7 @@ Part 2 (90 words): [Second half...]
 ```markdown
 Current: # Ultimate Guide
 Improved: # Ultimate Guide to Project Management Tools
-```
+````
 
 ---
 
@@ -248,6 +263,7 @@ Improved: # Ultimate Guide to Project Management Tools
 **Fix**: Add descriptive alt text to each image
 
 **Examples:**
+
 - Image 1: `alt="Project management dashboard showing task progress"`
 - Image 2: `alt="Team using collaboration tools for project planning"`
 - Image 3: `alt="Gantt chart example for project timeline management"`
@@ -262,6 +278,7 @@ Improved: # Ultimate Guide to Project Management Tools
 **Target**: 60-70 (Standard)
 
 **Actions:**
+
 1. Shorten 8 long sentences (>30 words)
 2. Convert 5 passive voice sentences to active
 3. Break up 3 long paragraphs
@@ -276,6 +293,7 @@ Improved: # Ultimate Guide to Project Management Tools
 **Found 0 internal links** - add at least 3-5
 
 **Opportunities:**
+
 1. Link "team collaboration" to `/team-collaboration-guide`
    - Anchor text: "effective team collaboration strategies"
    - Location: Paragraph 3
@@ -295,6 +313,7 @@ Improved: # Ultimate Guide to Project Management Tools
 **Current opening** (first 100 words): Doesn't include primary keyword
 
 **Suggested rewrite:**
+
 ```markdown
 Current:
 "Managing complex initiatives requires organization and the right approach.
@@ -309,6 +328,7 @@ make an informed decision."
 ```
 
 **Changes:**
+
 - Added primary keyword 3 times naturally
 - Clearer value proposition
 - Better hook for readers
@@ -322,21 +342,25 @@ make an informed decision."
 Based on competitor analysis, add these sections:
 
 **1. Pricing Comparison** (Search volume: 2.4K/month)
+
 - Why it matters: Users need budget information
 - Suggested length: 300-400 words
 - Include: Pricing table, free tier info, value analysis
 
 **2. Team Size Recommendations** (Search volume: 880/month)
+
 - Why it matters: Helps users find right fit
 - Suggested length: 200-300 words
 - Include: Small teams (2-10), Medium (10-50), Large (50+)
 
 **3. Integration Capabilities** (Search volume: 1.2K/month)
+
 - Why it matters: Technical requirement for many users
 - Suggested length: 400-500 words
 - Include: Slack, Google Workspace, Microsoft 365 integrations
 
 **4. Mobile App Comparison** (Search volume: 650/month)
+
 - Why it matters: Growing mobile usage
 - Suggested length: 250-300 words
 - Include: iOS/Android availability, features, ratings
@@ -344,11 +368,13 @@ Based on competitor analysis, add these sections:
 ### Competitor Insights
 
 **Top ranking content** (analyzed top 3):
+
 - Average word count: 2,800 words (you: 1,400)
 - Common topics: Pricing (3/3), Integrations (3/3), Mobile apps (2/3)
 - Unique features: Comparison tables (3/3), Video demos (2/3)
 
 **Your advantage opportunity:**
+
 - Add live pricing comparison table
 - Include more screenshots
 - Add FAQ section for featured snippet
@@ -420,6 +446,7 @@ Each tool offers unique features suited to different team sizes and industries.
 ```
 
 **Why this format works:**
+
 - Answers question directly in first paragraph
 - Numbered list ideal for featured snippets
 - Each item has descriptor (helps Google understand)
@@ -483,6 +510,7 @@ Add FAQ section and implement FAQ schema for featured snippets:
 ## Implementation Checklist
 
 ### Immediate Actions (Critical)
+
 - [ ] Add primary keyword to H1
 - [ ] Create meta description (use template above)
 - [ ] Add keyword to first 100 words
@@ -493,6 +521,7 @@ Add FAQ section and implement FAQ schema for featured snippets:
 **Expected impact**: High - fixes major SEO gaps
 
 ### High Priority (This Week)
+
 - [ ] Split 3 long paragraphs
 - [ ] Shorten 8 long sentences
 - [ ] Add 5 internal links (use URLs above)
@@ -503,6 +532,7 @@ Add FAQ section and implement FAQ schema for featured snippets:
 **Expected impact**: Medium-High - improves readability
 
 ### Medium Priority (This Month)
+
 - [ ] Add "Pricing Comparison" section (300 words)
 - [ ] Add "Team Size Recommendations" section (250 words)
 - [ ] Add "Integration Capabilities" section (400 words)
@@ -513,6 +543,7 @@ Add FAQ section and implement FAQ schema for featured snippets:
 **Expected impact**: Medium - fills content gaps
 
 ### Enhancement (Next Quarter)
+
 - [ ] Implement FAQ schema markup
 - [ ] Add video demonstration
 - [ ] Create downloadable comparison PDF
@@ -527,12 +558,14 @@ Add FAQ section and implement FAQ schema for featured snippets:
 ## Estimated Impact
 
 **Overall Assessment**:
+
 - **Time to Implement Critical + High Priority**: ~2.5 hours
 - **Expected Ranking Improvement**: Moderate to significant
 - **Timeframe**: 4-8 weeks after implementation
 - **Priority Level**: High
 
 **Expected Outcomes**:
+
 - Better keyword rankings (primary keyword: +5-15 positions estimated)
 - Improved CTR from search results (better meta tags)
 - Lower bounce rate (improved readability)
@@ -544,40 +577,47 @@ Add FAQ section and implement FAQ schema for featured snippets:
 ## Example Workflow
 
 ### User Request
+
 "Optimize this blog post for 'best project management tools'"
 
 ### Analysis Process
 
 **Step 1: Keyword Analysis** (5 min)
+
 - Extract primary keyword: "project management tools"
 - Check placement → Found in title but not H1 ❌
 - Calculate density → 0.8% (too low) ⚠️
 - Identify LSI keywords → "task management", "collaboration", "workflow"
 
 **Step 2: Readability Check** (3 min)
+
 - Calculate Flesch score → 52 (too difficult) ⚠️
 - Count long sentences → 8 over 30 words ❌
 - Find passive voice → 12% (too high) ⚠️
 - Assess paragraph length → 3 over 150 words ⚠️
 
 **Step 3: Technical SEO** (5 min)
+
 - Meta title → 72 characters (too long) ❌
 - Meta description → Missing ❌
 - URL slug → `/blog/post-123` (not descriptive) ❌
 - Images → 5/8 missing alt text ❌
 
 **Step 4: Content Quality** (5 min)
+
 - Word count → 1,400 (adequate but could be better)
 - Competitor average → 2,800 words (gap found) ⚠️
 - Missing topics → Pricing, integrations, mobile apps
 - E-A-T signals → Author bio present ✅
 
 **Step 5: Prioritize Fixes** (2 min)
+
 - Critical: Meta tags, H1 keyword, alt text
 - High: Readability improvements, internal links
 - Medium: Add missing topics, FAQ section
 
 **Step 6: Generate Report** (5 min)
+
 - Create formatted output with all findings
 - Provide specific before/after examples
 - Include implementation checklist
@@ -596,6 +636,7 @@ Add FAQ section and implement FAQ schema for featured snippets:
    - But: "Change H2 from 'Getting Started' to 'How to Get Started with Project Management Tools'"
 
 2. **Show before/after comparisons**
+
    ```
    Current: "The tool is used by teams."
    Improved: "Teams use the tool to manage projects efficiently."
